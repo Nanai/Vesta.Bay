@@ -1171,7 +1171,7 @@ obj/machinery/power/apc/proc/autoset(var/cur_state, var/on)
 		if("reset")
 			lightmode = null
 	for(var/obj/machinery/light/L in area)
-		INVOKE_ASYNC(L, /obj/machinery/light.proc/set_mode, lightmode)
+		INVOKE_ASYNC(L, TYPE_PROC_REF(/obj/machinery/light, set_mode), lightmode)
 		CHECK_TICK
 
 

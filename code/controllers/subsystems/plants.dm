@@ -6,7 +6,7 @@ PROCESSING_SUBSYSTEM_DEF(plants)
 	init_order = SS_INIT_PLANTS
 	wait = 60
 
-	process_proc = /obj/machinery/portable_atmospherics/hydroponics/Process
+	process_proc = TYPE_PROC_REF(/datum, Process) //yes plants. datum process. this is because process() is overriden on the tray, but defined on /datum
 
 	var/list/product_descs = list()         // Stores generated fruit descs.
 	var/list/seeds = list()                 // All seed data stored here.
