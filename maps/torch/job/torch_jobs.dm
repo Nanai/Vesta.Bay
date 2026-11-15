@@ -42,7 +42,7 @@
 						/datum/job/cyborg,
 	)
 
-	access_modify_region = list(
+	access_modify_region = alist(
 		ACCESS_REGION_SECURITY = list(access_change_ids),
 		ACCESS_REGION_MEDBAY = list(access_change_ids),
 		ACCESS_REGION_RESEARCH = list(access_change_ids),
